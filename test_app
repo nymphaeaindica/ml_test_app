@@ -282,7 +282,7 @@ def perform_xgb(n_clicks, csv, aux, filename):
             # ROC-AUC (Benign to simulant)
             fig1 = go.Figure()
             for ind, path in enumerate(path_1):
-                features, labels, target_id, n_input, n_simple = calc.read_data(path_0, label_0, features_index, cut_ranges) # Ñ„Ð¸Ñ‡Ð¸ Ð¸ Ð»ÐµÐ¹Ð±Ð»Ñ‹ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð±Ñ‹Ñ‚ÑŒ Ð½Ð¾Ñ€Ð¼ ndarray
+                features, labels, target_id, n_input, n_simple = calc.read_data(path_0, label_0, features_index, cut_ranges)
                 s_features, s_labels, s_target_id, s_n_input, s_n_simple = calc.dat_keeper(path, label_1[ind], features_index, cut_ranges)
                 n_features = np.concatenate([features, s_features], axis=0)
                 n_labels = np.concatenate([labels, s_labels], axis=0)
@@ -295,7 +295,7 @@ def perform_xgb(n_clicks, csv, aux, filename):
                 fig1.add_trace(go.Scatter(x=fpr, y=tpr, name=legend_str, hovertext=np.ndarray.round(thr, decimals=4)))  # trace 2
                 fig1.update_layout(
                     title=go.layout.Title(
-                        text="ROC-AUC (benign to simulants)",  # ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ Ð¾Ñ‚Ð´ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ñ„Ð°Ð¹Ð»Ð¾Ð²('1') Ðº Ð¼Ð°ÑÑÐ¸Ð²Ñƒ Ð´Ð°Ð½Ð½Ñ‹Ñ…('0')
+                        text="ROC-AUC (benign to simulants)", 
                         # xref="paper",
                         x=0,
                         xanchor="auto",
