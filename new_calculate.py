@@ -1,4 +1,4 @@
-"""  """
+"""Calculate module for test app"""
 import numpy as np
 import pandas as pd
 
