@@ -27,6 +27,7 @@ name of the .bin file located in the working directory
 All files should be placed in a working directory. 
 
 RUNNING TOOL:
+
 After installing all the necessary software and putting all files in working directory, 
 run tool by typing in ubuntu terminal (in working directory): 
 
