@@ -1,3 +1,4 @@
+"""Test app version for running from ubuntu/macos terminal"""
 import xgboost as xgb
 import numpy as np
 import pandas as pd
