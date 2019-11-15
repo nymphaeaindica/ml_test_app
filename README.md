@@ -14,7 +14,7 @@ xgboost (0.90 version), pandas (0.25.0 version), numpy (1.17.2 version), plotly 
 
 INPUT FILES:
 
-1).xml configuration file. User should edit configuration file before running tool by specifying working directory full path,  
+1. .xml configuration file. User should edit configuration file before running tool by specifying working directory full path,  
 name of.csv config file located in the working directory, name of the .aux file for test data located in the working directory,
 name of the .bin file located in the working directory 
 
