@@ -5,6 +5,7 @@ XGBoost is a decision-tree-based ensemble Machine Learning algorithm that uses a
 This tool is developed to perform testing stage of  XGBoost model based on user-suggested settings. 
 
 The tool consists of 2 modules: 
+
 test_app.py – main module, predict scores and calculate statistics. 
 calc.py – additional module, contains tools for processing .xml configuration file, creating test dataset. 
 
@@ -12,6 +13,7 @@ Before running tool, be sure, that you have installed Python 3.6 and necessary l
 xgboost (0.90 version), pandas (0.25.0 version), numpy (1.17.2 version), plotly (4.2.0 version)
 
 INPUT FILES:
+
 1).xml configuration file. User should edit configuration file before running tool by specifying working directory full path,  
 name of.csv config file located in the working directory, name of the .aux file for test data located in the working directory,
 name of the .bin file located in the working directory 
